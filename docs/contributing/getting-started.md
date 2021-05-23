@@ -29,9 +29,8 @@ remote: Compressing objects: 100% (147/147), done.
 remote: Total 56705 (delta 134), reused 145 (delta 84), pack-reused 56474
 Receiving objects: 100% (56705/56705), 27.96 MiB | 34.92 MiB/s, done.
 Resolving deltas: 100% (44177/44177), done.
-> ls Thanatos/
-CHANGELOG.md     LICENSE    docs        poetry.lock
-CONTRIBUTING.md  README.md  mkdocs.yml  pyproject.toml
+❯ ls thanatos
+CHANGELOG.md  CONTRIBUTING.md  LICENSE  README.md  api  docs  mkdocs.yml  poetry.lock  pyproject.toml  site  ui
 ```
 
 ### About Remote Repos
