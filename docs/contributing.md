@@ -4,7 +4,7 @@ Thanatos is maintained as a [GitHub project](https://github.com/psmware-labs/tha
 
 ## Governance
 
-Thanatos is a community-based Free Open Source Software (FOSS) project sponsored by [Virtual Service Operations, LLC (VSO)](https://www.vso-inc.com). As a solution provider, VSO works with its clients around the world to craft and build Service Management, Migration and Managed Services of Hybrid Cloud Environments strategies and solutions. The direction of this project will be shaped the VSO as well as by input from VSO customers; independent of where requests come from, contributors will need to follow the Contributing Guidelines.
+Thanatos is a community-based Free Open Source Software (FOSS) project sponsored by [Virtual Service Operations, LLC (VSO)](https://www.vso-inc.com). As a solution provider, VSO works with its clients around the world to craft and build Service Management, Migration and Managed Services of Hybrid Cloud Environments strategies and solutions. The direction of this project will be shaped by VSO, as well as by input from VSO customers; independent of where requests come from, contributors will need to follow the Contributing Guidelines.
 
 The Thanatos Core Team is responsible for the direction and execution of the code that gets committed to the project.
 
@@ -37,7 +37,7 @@ The following provides more detail on these.
 * The GitHub **Release Milestone** will track items for the _current_ release.
 
 !!! note
-    Release windows and dates will be updated per [Release Management](release-management).
+    Release windows and dates will be updated per [Release Management](contributing/#release-management).
 
 #### Near Term
 
@@ -161,7 +161,7 @@ your issue.
 * A use case for the feature; who would use it and what value it would add to Thanatos
 * A rough description of changes necessary to the database schema (if applicable)
 * Any third-party libraries or other resources which would be involved
-* Please avoid prepending any sort of tag (e.g. "[Feature]") to the issue title.
+* Please avoid pre-pending any sort of tag (e.g. "[Feature]") to the issue title.
 
 The issue will be reviewed by a moderator after submission and the appropriate
 labels will be applied for categorization.
