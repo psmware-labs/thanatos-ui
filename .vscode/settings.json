@@ -61,5 +61,6 @@
         "vscode",
         "yaml",
         "yasg"
-    ]
+    ],
+    "python.analysis.extraPaths": ["app", "/app/api"]
 }
