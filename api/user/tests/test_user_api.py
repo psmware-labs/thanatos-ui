@@ -53,7 +53,7 @@ class PublicUserApiTests(TestCase):
         """Test that the password is more than 8 characters"""
         payload = {
             'email': 'test@psmware.io',
-            'password': 'wrongpw'
+            'password': 'wrong_password'
         }
         res = self.client.post(CREATE_USER_URL, payload)
         # Assertions
@@ -82,7 +82,7 @@ class PublicUserApiTests(TestCase):
         create_user(email='test@psmware.io', password='testpass')
         payload = {
             'email': 'test@psmware.io',
-            'password': 'wrongpwd'
+            'password': 'wrong_password'
         }
         res = self.client.post(TOKEN_URL, payload)
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
