@@ -11,8 +11,6 @@
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU Affero General Public License for more details.
-FROM psmwareltd/django:3.2.3
+FROM psmwareltd/dj-node:1.0
 LABEL author="Pat McLean" \
       maintainer="Pat McLean<github@psmware.ie>"
-
-
