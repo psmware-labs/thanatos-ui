@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext as _
+from django.contrib.auth.models import Group  # hiding this
 
 from core import models
 
@@ -29,3 +30,4 @@ class UserAdmin(BaseUserAdmin):
 
 # Registering Admin classes for admin site
 admin.site.register(models.User, UserAdmin)
+admin.site.unregister(Group)  # hiding this

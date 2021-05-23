@@ -58,6 +58,7 @@
         "root",
         "selectattr",
         "simplejwt",
+        "unregister",
         "vscode",
         "yaml",
         "yasg"
