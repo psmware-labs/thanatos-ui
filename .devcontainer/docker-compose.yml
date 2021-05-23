@@ -27,8 +27,9 @@ services:
       - ~/.gnupg:/home/vscode/.gnupg:cached
       - ..:/app:cached
     ports:
-      - 0.0.0.0:5000:5000
-      - 0.0.0.0:8000:8000
+      - 0.0.0.0:3000:3000  # UI
+      - 0.0.0.0:5000:5000  # API
+      - 0.0.0.0:8000:8000  # Documentation
     env_file:
       - devcontainer.env
     depends_on:

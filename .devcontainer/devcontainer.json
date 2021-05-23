@@ -54,6 +54,8 @@
 		"davidanson.vscode-markdownlint",
 		"christian-kohler.path-intellisense",
 		"redhat.vscode-yaml",
+		"formulahendry.auto-close-tag",
+		"dsznajder.es7-react-js-snippets",
 		"formulahendry.auto-rename-tag",
 		"p1c2u.docker-compose",
 		"henriiik.docker-linter",
