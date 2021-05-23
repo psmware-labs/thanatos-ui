@@ -1,6 +1,8 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
+from core import models
+
 
 def sample_user(email='test@psmware.io', password='testpass123'):
     """Create a sample user"""
