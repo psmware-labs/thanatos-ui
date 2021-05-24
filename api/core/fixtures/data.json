@@ -1,313 +1,5 @@
 [
     {
-        "model": "auth.permission",
-        "pk": 1,
-        "fields": {
-            "name": "Can add permission",
-            "content_type": 1,
-            "codename": "add_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 2,
-        "fields": {
-            "name": "Can change permission",
-            "content_type": 1,
-            "codename": "change_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 3,
-        "fields": {
-            "name": "Can delete permission",
-            "content_type": 1,
-            "codename": "delete_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 4,
-        "fields": {
-            "name": "Can view permission",
-            "content_type": 1,
-            "codename": "view_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 5,
-        "fields": {
-            "name": "Can add group",
-            "content_type": 2,
-            "codename": "add_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 6,
-        "fields": {
-            "name": "Can change group",
-            "content_type": 2,
-            "codename": "change_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 7,
-        "fields": {
-            "name": "Can delete group",
-            "content_type": 2,
-            "codename": "delete_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 8,
-        "fields": {
-            "name": "Can view group",
-            "content_type": 2,
-            "codename": "view_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 9,
-        "fields": {
-            "name": "Can add content type",
-            "content_type": 3,
-            "codename": "add_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 10,
-        "fields": {
-            "name": "Can change content type",
-            "content_type": 3,
-            "codename": "change_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 11,
-        "fields": {
-            "name": "Can delete content type",
-            "content_type": 3,
-            "codename": "delete_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 12,
-        "fields": {
-            "name": "Can view content type",
-            "content_type": 3,
-            "codename": "view_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 13,
-        "fields": {
-            "name": "Can add user",
-            "content_type": 4,
-            "codename": "add_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 14,
-        "fields": {
-            "name": "Can change user",
-            "content_type": 4,
-            "codename": "change_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 15,
-        "fields": {
-            "name": "Can delete user",
-            "content_type": 4,
-            "codename": "delete_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 16,
-        "fields": {
-            "name": "Can view user",
-            "content_type": 4,
-            "codename": "view_user"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 17,
-        "fields": {
-            "name": "Can add log entry",
-            "content_type": 5,
-            "codename": "add_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 18,
-        "fields": {
-            "name": "Can change log entry",
-            "content_type": 5,
-            "codename": "change_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 19,
-        "fields": {
-            "name": "Can delete log entry",
-            "content_type": 5,
-            "codename": "delete_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 20,
-        "fields": {
-            "name": "Can view log entry",
-            "content_type": 5,
-            "codename": "view_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 21,
-        "fields": {
-            "name": "Can add session",
-            "content_type": 6,
-            "codename": "add_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 22,
-        "fields": {
-            "name": "Can change session",
-            "content_type": 6,
-            "codename": "change_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 23,
-        "fields": {
-            "name": "Can delete session",
-            "content_type": 6,
-            "codename": "delete_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 24,
-        "fields": {
-            "name": "Can view session",
-            "content_type": 6,
-            "codename": "view_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 25,
-        "fields": {
-            "name": "Can add account",
-            "content_type": 7,
-            "codename": "add_account"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 26,
-        "fields": {
-            "name": "Can change account",
-            "content_type": 7,
-            "codename": "change_account"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 27,
-        "fields": {
-            "name": "Can delete account",
-            "content_type": 7,
-            "codename": "delete_account"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 28,
-        "fields": {
-            "name": "Can view account",
-            "content_type": 7,
-            "codename": "view_account"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 1,
-        "fields": {
-            "app_label": "auth",
-            "model": "permission"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 2,
-        "fields": {
-            "app_label": "auth",
-            "model": "group"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 3,
-        "fields": {
-            "app_label": "contenttypes",
-            "model": "contenttype"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 4,
-        "fields": {
-            "app_label": "core",
-            "model": "user"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 5,
-        "fields": {
-            "app_label": "admin",
-            "model": "logentry"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 6,
-        "fields": {
-            "app_label": "sessions",
-            "model": "session"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 7,
-        "fields": {
-            "app_label": "core",
-            "model": "account"
-        }
-    },
-    {
         "model": "core.user",
         "pk": 1,
         "fields": {
@@ -445,6 +137,550 @@
         "pk": 12,
         "fields": {
             "name": "VION",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.primarymetric",
+        "pk": 1,
+        "fields": {
+            "metric": "Architectural Stability",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.primarymetric",
+        "pk": 2,
+        "fields": {
+            "metric": "SOPs and Runbooks",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.primarymetric",
+        "pk": 3,
+        "fields": {
+            "metric": "Security/Compliance",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.primarymetric",
+        "pk": 4,
+        "fields": {
+            "metric": "Service Management",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.primarymetric",
+        "pk": 5,
+        "fields": {
+            "metric": "Tooling",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 1,
+        "fields": {
+            "metric": "Access Control Standards applied",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 2,
+        "fields": {
+            "metric": "Adherance to Standards",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 3,
+        "fields": {
+            "metric": "Architectural Documentation",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 4,
+        "fields": {
+            "metric": "BUR administration (policies, monitoring, restores)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 5,
+        "fields": {
+            "metric": "Change Process",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 6,
+        "fields": {
+            "metric": "Conformance to Industry Standards",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 7,
+        "fields": {
+            "metric": "Credentialling and Onboarding",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 8,
+        "fields": {
+            "metric": "DR Failover Testing processes & procedures",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 9,
+        "fields": {
+            "metric": "Documentation is Complete & Kept up to date",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 10,
+        "fields": {
+            "metric": "Environmental Resiliency",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 11,
+        "fields": {
+            "metric": "HIPAA, ITAR, etc Process Training Complete for All Staff",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 12,
+        "fields": {
+            "metric": "IncIdent & Problem Management Supportability",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 13,
+        "fields": {
+            "metric": "Monitoring & Alerting (automated and properly tuned)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 14,
+        "fields": {
+            "metric": "Network Security Intrusion Detection (n/a for VSO at R1)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 15,
+        "fields": {
+            "metric": "Network administration & remediation",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 16,
+        "fields": {
+            "metric": "Reporting (data available thru tools vs manual collection)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 17,
+        "fields": {
+            "metric": "Ticketing Capability within Tools",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.secondarymetric",
+        "pk": 18,
+        "fields": {
+            "metric": "VMWare infrastructure administration and remediation",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 1,
+        "fields": {
+            "metric": "ARB or Change Board convenes weekly",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 2,
+        "fields": {
+            "metric": "Access Control Standards applied",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 3,
+        "fields": {
+            "metric": "Any HybrId (local to cloud) components",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 4,
+        "fields": {
+            "metric": "Architectural Documentation",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 5,
+        "fields": {
+            "metric": "Automation (All repeated and labor intensive tasks are automated)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 6,
+        "fields": {
+            "metric": "BUR Success/Miss/Fail, Restores",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 7,
+        "fields": {
+            "metric": "BUR administration (policies, monitoring, restores)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 8,
+        "fields": {
+            "metric": "Backup & Restore policies set & consistently applied",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 9,
+        "fields": {
+            "metric": "Backup solution with policies & processes",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 10,
+        "fields": {
+            "metric": "Capacity",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 11,
+        "fields": {
+            "metric": "Change and Service Request within Ticketing system",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 12,
+        "fields": {
+            "metric": "Conformance to Industry Standards",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 13,
+        "fields": {
+            "metric": "Consistency of ticket prioritization",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 14,
+        "fields": {
+            "metric": "Consistently Deployed throughout environment",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 15,
+        "fields": {
+            "metric": "Credentialling and Onboarding",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 16,
+        "fields": {
+            "metric": "DR Failover Testing processes & procedures",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 17,
+        "fields": {
+            "metric": "DR Replication",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 18,
+        "fields": {
+            "metric": "DR solution with policies & processes",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 19,
+        "fields": {
+            "metric": "Disaster Recovery functional failover of the defined environment can be executed consistently",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 20,
+        "fields": {
+            "metric": "Dynamic Automation or Auto-Ticketing implemented",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 21,
+        "fields": {
+            "metric": "ESXi and Hypervisors",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 22,
+        "fields": {
+            "metric": "Established & Documented",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 23,
+        "fields": {
+            "metric": "Established & Documented1",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 24,
+        "fields": {
+            "metric": "Followed by Customer & Operations",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 25,
+        "fields": {
+            "metric": "Gold image standards",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 26,
+        "fields": {
+            "metric": "HIPAA, ITAR, etc Process Training Complete for All Staff",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 27,
+        "fields": {
+            "metric": "High Availability/Clusters/Failover",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 28,
+        "fields": {
+            "metric": "IncIdents/Problems populate under the correct severity levels",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 29,
+        "fields": {
+            "metric": "Logical Network",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 30,
+        "fields": {
+            "metric": "Network",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 31,
+        "fields": {
+            "metric": "Network Security Intrusion Detection (n/a for VSO at R1)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 32,
+        "fields": {
+            "metric": "Network administration & remediation",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 33,
+        "fields": {
+            "metric": "Orchestration (multi-system integration to accomplish complex tasks, ie, DR Failover)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 34,
+        "fields": {
+            "metric": "Physical Environment",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 35,
+        "fields": {
+            "metric": "Physical Network",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 36,
+        "fields": {
+            "metric": "Portion of tickets that are Automated (100) vs Manual (0)",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 37,
+        "fields": {
+            "metric": "Scalability-Environment can grow without re-architecture of major components",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 38,
+        "fields": {
+            "metric": "Standard Diagnostics Defined",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 39,
+        "fields": {
+            "metric": "Tooling Integration to Service Management System",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 40,
+        "fields": {
+            "metric": "VMWare infrastructure administration and remediation",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 41,
+        "fields": {
+            "metric": "VMs",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 42,
+        "fields": {
+            "metric": "VSAN and Storage",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 43,
+        "fields": {
+            "metric": "Virtual Network",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 44,
+        "fields": {
+            "metric": "Visibility end to end",
+            "user": 1
+        }
+    },
+    {
+        "model": "core.tertiarymetric",
+        "pk": 45,
+        "fields": {
+            "metric": "Written requirements/SLAs for customer KPI",
             "user": 1
         }
     }

@@ -86,3 +86,21 @@ class TertiaryMetric(models.Model):
 
     def __str__(self):
         return self.metric
+
+class Question(models.Model):
+    """Questions to be used for Theta scoring"""
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.PROTECT,
+    )
+    primary_metric = models.ForeignKey('PrimaryMetric',
+                                       on_delete=models.PROTECT)
+    secondary_metric = models.ForeignKey('SecondaryMetric',
+                                         on_delete=models.PROTECT)
+    tertiary_metric = models.ForeignKey('TertiaryMetric',
+                                        on_delete=models.PROTECT)
+
+    def __str__(self):
+        return self.primary_metric.metric + \
+            self.secondary_metric.metric + \
+            self.tertiary_metric.metric
