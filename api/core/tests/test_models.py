@@ -55,3 +55,30 @@ class ModelTests(TestCase):
         )
         # Assertion
         self.assertEqual(str(account), account.name)
+
+    def test_primary_metric_str(self):
+        """Test the Primary Metric string representation"""
+        primary = models.PrimaryMetric.objects.create(
+            user=sample_user(),
+            metric='Architectural Stability'
+        )
+        # Assertion
+        self.assertEqual(str(primary), primary.metric)
+
+    def test_secondary_metric_str(self):
+        """Test the Secondary Metric string representation"""
+        secondary = models.SecondaryMetric.objects.create(
+            user=sample_user(),
+            metric='Access Control Standards applied'
+        )
+        # Assertion
+        self.assertEqual(str(secondary), secondary.metric)
+
+    def test_tertiary_metric_str(self):
+        """Test the Tertiary Metric string representation"""
+        tertiary = models.TertiaryMetric.objects.create(
+            user=sample_user(),
+            metric='ARB or Change Board convenes weekly'
+        )
+        # Assertion
+        self.assertEqual(str(tertiary), tertiary.metric)
