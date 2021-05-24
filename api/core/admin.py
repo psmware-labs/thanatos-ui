@@ -33,3 +33,4 @@ admin.site.register(models.User, UserAdmin)
 admin.site.unregister(Group)  # hiding this
 admin.site.register(models.Account)
 admin.site.register(models.PrimaryMetric)
+admin.site.register(models.SecondaryMetric)

@@ -2,7 +2,7 @@ from django.test import TestCase, Client
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 
-from core.models import Account, PrimaryMetric
+from core.models import Account, PrimaryMetric, SecondaryMetric
 
 
 class AdminSiteTests(TestCase):
@@ -22,6 +22,8 @@ class AdminSiteTests(TestCase):
         self.account = Account.objects.create(user=self.user, name='SAP')
         self.primary_metric = PrimaryMetric.objects.create(
             user=self.user, metric='SAP primary_metric')
+        self.secondary_metric = SecondaryMetric.objects.create(
+            user=self.user, metric='SAP secondary_metric')
 
     def test_users_listed(self):
         """Test that users are listed on user page"""
@@ -87,6 +89,29 @@ class AdminSiteTests(TestCase):
     def test_primary_metric_account_page(self):
         """Test that the create primary_metric page works"""
         url = reverse('admin:core_primarymetric_add')
+        res = self.client.get(url)
+        # Assertions ( checking for http 200 )
+        self.assertEqual(res.status_code, 200)
+
+    def test_secondary_metric_listed(self):
+        """Test that the secondary metrics are listed on primarymetrics page"""
+        url = reverse('admin:core_secondarymetric_changelist')
+        res = self.client.get(url)
+        # Assertions
+        self.assertContains(res, self.secondary_metric.metric)
+
+    def test_secondary_metric_change_page(self):
+        """Test that the secondary_metric edit page works"""
+        url = reverse('admin:core_secondarymetric_change',
+                      args=[self.secondary_metric.id])
+        # above line generates url like /admin/core/secondarymetric/1 (id)
+        res = self.client.get(url)
+        # Assertions ( checking for http 200 )
+        self.assertEqual(res.status_code, 200)
+
+    def test_secondary_metric_account_page(self):
+        """Test that the create secondary_metric page works"""
+        url = reverse('admin:core_secondarymetric_add')
         res = self.client.get(url)
         # Assertions ( checking for http 200 )
         self.assertEqual(res.status_code, 200)
