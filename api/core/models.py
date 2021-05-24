@@ -87,6 +87,7 @@ class TertiaryMetric(models.Model):
     def __str__(self):
         return self.metric
 
+
 class Question(models.Model):
     """Questions to be used for Theta scoring"""
     user = models.ForeignKey(
