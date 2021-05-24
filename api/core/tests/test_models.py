@@ -82,3 +82,37 @@ class ModelTests(TestCase):
         )
         # Assertion
         self.assertEqual(str(tertiary), tertiary.metric)
+
+    def test_question_str(self):
+        """Test the question string representation"""
+        # setup up the user for this test
+        question_user = sample_user()
+
+        # create teh primary metric
+        primary = models.PrimaryMetric.objects.create(
+            user=question_user,
+            metric='Primary'
+        )
+
+        #  create the secondary metric
+        secondary = models.SecondaryMetric.objects.create(
+            user=question_user,
+            metric='Secondary'
+        )
+
+        #  create the tertiary metric
+        tertiary = models.TertiaryMetric.objects.create(
+            user=question_user,
+            metric='Secondary'
+        )
+
+        # create the question
+        question = models.Question.objects.create(
+            user=question_user,
+            primary_metric=primary,
+            secondary_metric=secondary,
+            tertiary_metric=tertiary
+        )
+        # Assertion
+        self.assertEqual(str(question), primary.metric +
+                         secondary.metric + tertiary.metric)
