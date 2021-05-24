@@ -31,3 +31,4 @@ class UserAdmin(BaseUserAdmin):
 # Registering Admin classes for admin site
 admin.site.register(models.User, UserAdmin)
 admin.site.unregister(Group)  # hiding this
+admin.site.register(models.Account)
