@@ -14,3 +14,7 @@
 FROM psmwareltd/dj-node:1.0
 LABEL author="Pat McLean" \
       maintainer="Pat McLean<github@psmware.ie>"
+
+COPY .devcontainer/bin /home/vscode/bin
+RUN chown -fR vscode.vscode /home/vscode/bin
+RUN chmod -fR 700 /home/vscode/bin
