@@ -2,7 +2,7 @@ from django.test import TestCase, Client
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 
-from core.models import Account, PrimaryMetric, SecondaryMetric
+from core.models import Account, PrimaryMetric, SecondaryMetric, TertiaryMetric
 
 
 class AdminSiteTests(TestCase):
@@ -23,6 +23,8 @@ class AdminSiteTests(TestCase):
         self.primary_metric = PrimaryMetric.objects.create(
             user=self.user, metric='SAP primary_metric')
         self.secondary_metric = SecondaryMetric.objects.create(
+            user=self.user, metric='SAP secondary_metric')
+        self.tertiary_metric = TertiaryMetric.objects.create(
             user=self.user, metric='SAP secondary_metric')
 
     def test_users_listed(self):
@@ -94,7 +96,7 @@ class AdminSiteTests(TestCase):
         self.assertEqual(res.status_code, 200)
 
     def test_secondary_metric_listed(self):
-        """Test that the secondary metrics are listed on primarymetrics page"""
+        """Test that the secondary metrics are listed on secondarymetrics page"""
         url = reverse('admin:core_secondarymetric_changelist')
         res = self.client.get(url)
         # Assertions
@@ -112,6 +114,29 @@ class AdminSiteTests(TestCase):
     def test_secondary_metric_account_page(self):
         """Test that the create secondary_metric page works"""
         url = reverse('admin:core_secondarymetric_add')
+        res = self.client.get(url)
+        # Assertions ( checking for http 200 )
+        self.assertEqual(res.status_code, 200)
+
+    def test_tertiary_metric_listed(self):
+        """Test that the tertiary metrics are listed on tertiarymetrics page"""
+        url = reverse('admin:core_tertiarymetric_changelist')
+        res = self.client.get(url)
+        # Assertions
+        self.assertContains(res, self.tertiary_metric.metric)
+
+    def test_tertiary_metric_change_page(self):
+        """Test that the tertiary edit page works"""
+        url = reverse('admin:core_tertiarymetric_change',
+                      args=[self.tertiary_metric.id])
+        # above line generates url like /admin/core/tertiarymetric/1 (id)
+        res = self.client.get(url)
+        # Assertions ( checking for http 200 )
+        self.assertEqual(res.status_code, 200)
+
+    def test_tertiary_metric_account_page(self):
+        """Test that the create tertiary metric page works"""
+        url = reverse('admin:core_tertiarymetric_add')
         res = self.client.get(url)
         # Assertions ( checking for http 200 )
         self.assertEqual(res.status_code, 200)
