@@ -1,0 +1,6 @@
+#!/bin/sh
+defapp=core
+APP=${1:-$defapp}   # Defaults to core application
+cd /app/api
+python manage.py migrate
+python manage.py migrate $APP

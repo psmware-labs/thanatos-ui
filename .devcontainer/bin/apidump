@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /app/api
+FILE=/app/api/core/fixtures/data.json
+python manage.py dumpdata --all --output $FILE
