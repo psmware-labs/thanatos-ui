@@ -51,22 +51,6 @@ class PrivateAccountsApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data, serializer.data)
 
-    def test_accounts_limited_to_user(self):
-        """Test that accounts returned are for authenticated user"""
-        user2 = get_user_model().objects.create_user(
-            'other@psmware.io',
-            'testpass'
-        )
-        Account.objects.create(user=user2, name='BSNIC')
-        account = Account.objects.create(
-            user=self.user, name='SAP')
-
-        res = self.client.get(ACCOUNT_URL)
-        # Assertions
-        self.assertEqual(res.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(res.data), 1)
-        self.assertEqual(res.data[0]['name'], account.name)
-
     def test_create_account_successful(self):
         """Test creating a new account"""
         payload = {'name': 'BSNIC'}
