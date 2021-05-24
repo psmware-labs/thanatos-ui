@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'user',
     'accounts',
     'metrics',
+    'questions',
 ]
 
 MIDDLEWARE = [
