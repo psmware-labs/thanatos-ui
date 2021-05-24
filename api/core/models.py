@@ -3,6 +3,8 @@ from django.contrib.auth.models import AbstractBaseUser, \
     BaseUserManager, \
     PermissionsMixin
 
+from django.conf import settings
+
 
 class UserManager(BaseUserManager):
 
@@ -36,3 +38,15 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
     # set email as default username field
     USERNAME_FIELD = 'email'
+
+
+class Account(models.Model):
+    """Accounts to be used for a group of questions"""
+    name = models.CharField(max_length=255)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+
+    def __str__(self):
+        return self.name
