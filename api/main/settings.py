@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'core',
     'user',
     'accounts',
+    'metrics',
 ]
 
 MIDDLEWARE = [
