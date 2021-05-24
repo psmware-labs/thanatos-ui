@@ -1,8 +1,15 @@
 #!/bin/sh
+echo "Setting up the API database and loading seed data, if present."
+cd /app/api
+python manage.py migrate
+
 FILE=/app/api/core/fixtures/data.json
 if [ -f "$FILE" ]; then
-   cd /app/api
    python manage.py loaddata $FILE
 else
    echo "$FILE does not exist. No data will be imported"
 fi
+
+echo "Setting up the UI package list."
+cd /app/ui
+npm install

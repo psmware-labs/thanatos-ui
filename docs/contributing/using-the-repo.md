@@ -20,6 +20,39 @@ The first time opening the container will take a while, as the required images n
 
 The container will be fully loaded and ready to use when the icon in the bottom left switches from **↻ Opening Remote...** to **Dev Container: THANATOS**.
 
+### Setting up the API and UI
+
+On first run of, or after you rebuild, your container it is necessary to setup the UI and API. Thi can be done by opening a _Terminal Window_ in VSCode and running `setupApp` at the prompt.
+
+```nohighlight
+╭──vscode@thanatos-app /app  ‹develop›
+╰─➤  setupApp
+Setting up the API database and loading seed data, if present.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+Installed 33 object(s) from 1 fixture(s)
+Setting up the UI package list.
+npm WARN @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@7.13.12 requires a peer of @babel/core@^7.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1946 packages in 13.871s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 79 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+╭─vscode@thanatos-app /app  ‹develop›
+╰─➤
+```
+
 ## Working in your Development Environment
 
 Below are common commands for working your development environment. There are three different development servers included in this project.
