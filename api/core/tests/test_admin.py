@@ -96,7 +96,8 @@ class AdminSiteTests(TestCase):
         self.assertEqual(res.status_code, 200)
 
     def test_secondary_metric_listed(self):
-        """Test that the secondary metrics are listed on secondarymetrics page"""
+        """Test that the secondary metrics are listed on
+        secondarymetrics page"""
         url = reverse('admin:core_secondarymetric_changelist')
         res = self.client.get(url)
         # Assertions
