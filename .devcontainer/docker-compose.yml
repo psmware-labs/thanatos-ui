@@ -14,10 +14,10 @@
 version: '3'
 
 services:
-  thanatos-app:
-    image: thanatos-app
-    container_name: thanatos-app
-    hostname: thanatos-app
+  thanatos-ui:
+    image: thanatos-ui
+    container_name: thanatos-ui
+    hostname: thanatos-ui
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile.app
@@ -28,37 +28,5 @@ services:
       - ..:/app:cached
     ports:
       - 0.0.0.0:3000:3000  # UI
-      - 0.0.0.0:5000:5000  # API
-      - 0.0.0.0:8000:8000  # Documentation
     env_file:
       - devcontainer.env
-    depends_on:
-      - thanatos-db
-
-    command: sleep infinity
-
-  thanatos-db:
-    image: thanatos-db
-    container_name: thanatos-db
-    hostname: thanatos-db
-    build:
-      context: ..
-      dockerfile: .devcontainer/Dockerfile.db
-    ports:
-      - 5432:5432
-    env_file:
-      - devcontainer.env
-
-  thanatos-dbadmin:
-    image: thanatos-dbadmin
-    container_name: thanatos-dbadmin
-    hostname: thanatos-dbadmin
-    build:
-      context: ..
-      dockerfile: .devcontainer/Dockerfile.dbadmin
-    ports:
-      - 0.0.0.0:5150:80
-    env_file:
-      - devcontainer.env
-    depends_on:
-      - thanatos-db

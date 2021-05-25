@@ -13,9 +13,9 @@
 // GNU Affero General Public License for more details.
 
 {
-    "name": "THANATOS",
+    "name": "THANATOS UI",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "thanatos-app",
+    "service": "thanatos-ui",
     "workspaceFolder": "/app",
 
     // Set *default* container specific settings.json values on container create.

@@ -5,15 +5,17 @@ theme:
 
 plugins:
   - search
-  - mkdocstrings
   - git-committers
   - git-revision-date-localized
+  - mermaid2
+  - autorefs
+
   - minify:
       minify_html: true
       minify_js: false
       htmlmin_opts:
           remove_comments: true
-  - mermaid2
+
   - with-pdf:
       author: Pat McLean
       copyright: psmware ltd
@@ -23,6 +25,9 @@ plugins:
 markdown_extensions:
   - attr_list
   - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
 
 nav:
   - Home: index.md

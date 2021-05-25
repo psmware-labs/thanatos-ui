@@ -25,7 +25,7 @@ The container will be fully loaded and ready to use when the icon in the bottom 
 On first run of, or after you rebuild, your container it is necessary to setup the UI and API. Thi can be done by opening a _Terminal Window_ in VSCode and running `setupApp` at the prompt.
 
 ```nohighlight
-╭──vscode@thanatos-app /app  ‹develop›
+╭──vscode@thanatos-ui /app  ‹develop›
 ╰─➤  setupApp
 Setting up the API database and loading seed data, if present.
 Operations to perform:
@@ -49,7 +49,7 @@ audited 1946 packages in 13.871s
 
 found 79 moderate severity vulnerabilities
   run `npm audit fix` to fix them, or `npm audit` for details
-╭─vscode@thanatos-app /app  ‹develop›
+╭─vscode@thanatos-ui /app  ‹develop›
 ╰─➤
 ```
 
@@ -66,7 +66,7 @@ Below are common commands for working your development environment. There are th
 The backend API is written in Python using the Django REST Framework. To start the development server, in a _Terminal Window_ in VSCode. Type `serve api`, this will start the REST API service, which can be accessed at `http://localhost:5000/` for development.
 
 ```nohighlight
-╭─vscode@thanatos-app /app  ‹develop›
+╭─vscode@thanatos-ui /app  ‹develop›
 ╰─➤  serve api
 Watching for file changes with StatReloader
 Performing system checks...
@@ -85,7 +85,7 @@ The server will watch for any changes to code, and if valid, will incorporate th
 The frontend UI is written in React using TypeScript. To start the development server, in a _Terminal Window_ in VSCode. Type `serve ui`, this will start the React UI, which can be accessed at `http://localhost:3000/` for development.
 
 ```nohighlight
-╭─vscode@thanatos-app /app  ‹develop›
+╭─vscode@thanatos-ui /app  ‹develop›
 ╰─➤  serve ui
 Compiled successfully!
 
@@ -105,7 +105,7 @@ The server will watch for any changes to code, and if valid, will incorporate th
 The documentation is written in using [Markdown](https://www.markdownguide.org). This simple to use documentation style allows for ery flexible documenting for GitHub and documentations sites.  To start the development server which will alow you to see what your documentation will look like real-time, in a _Terminal Window_ in VSCode. Type `serve docs`, this will start the React UI, which can be accessed at `http://localhost:8000/` for development.
 
 ```nohighlight
-╭─vscode@thanatos-app /app  ‹develop›
+╭─vscode@thanatos-ui /app  ‹develop›
 ╰─➤  serve docs                                                                                                                                             127 ↵
 INFO    -  Building documentation...
 WARNING -  Config value: 'dev_addr'. Warning: The use of the IP address '0.0.0.0' suggests a production environment or the use of a proxy to connect to the MkDocs server. However, the MkDocs' server is intended for local development purposes only. Please use a third party production-ready server instead.
