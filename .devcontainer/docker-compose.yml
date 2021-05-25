@@ -20,7 +20,7 @@ services:
     hostname: thanatos-ui
     build:
       context: ..
-      dockerfile: .devcontainer/Dockerfile.app
+      dockerfile: .devcontainer/Dockerfile
     user: vscode
     volumes:
       - ~/.ssh:/home/vscode/.ssh:ro
@@ -30,3 +30,4 @@ services:
       - 0.0.0.0:3000:3000  # UI
     env_file:
       - devcontainer.env
+    command: sleep infinity

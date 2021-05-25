@@ -50,25 +50,19 @@
 
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
-        "ms-python.python",
-        "hookyqr.beautify",
         "davidanson.vscode-markdownlint",
         "christian-kohler.path-intellisense",
-        "redhat.vscode-yaml",
         "formulahendry.auto-close-tag",
         "dsznajder.es7-react-js-snippets",
         "formulahendry.auto-rename-tag",
-        "p1c2u.docker-compose",
-        "henriiik.docker-linter",
         "donjayamanne.githistory",
         "eamodio.gitlens",
         "dotjoshjohnson.xml",
         "github.vscode-pull-request-github",
-        "ms-python.vscode-pylance",
         "njpwerner.autodocstring",
         "hbenl.vscode-test-explorer",
-        "littlefoxteam.vscode-python-test-adapter",
         "streetsidesoftware.code-spell-checker"
     ],
     "remoteUser": "vscode",
+    "postCreateCommand": "npm install",
 }
